@@ -4,17 +4,40 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from "react-bootstrap/Button";
 import { Card } from "react-bootstrap";
+import { useState } from "react";
 
-let Counter = () => {
+const initialState = {
+    count: 0
+}
+
+function Counter() {
+let [state, setState] = useState(initialState);
+  
+  let incr = () => {
+    setState({
+      count: state.count + 1
+    }
+   )
+  }
+  
+  let decr = () => {
+    setState({
+      count: state.count - 1
+    }
+   )
+  }
+
+
     return (
         <>
             <Container>
                 <Row>
                     <Col xs ={4}>
-                        <Card classname="shadow-lg">
+                        <Card classame="shadow-lg">
                             <Card.Body>
-                                <p classname="display-2">count</p>
-                                <Button variant>Increment</Button>
+                                <p className="display-2">{ state.count }</p>
+                                <Button onClick={incr} variant="success" className="m-1">Increment</Button>
+                                <Button onClick={decr} variant="warning">Decrement</Button>
                             </Card.Body>
 
                         </Card>
@@ -24,4 +47,5 @@ let Counter = () => {
         </>
     )
 }
-export default Counter;
+
+export default Counter

@@ -1,0 +1,11 @@
+.Sidebar {
+    height:50%;
+    color: rgb(83, 83, 158);
+    text-align: center;
+    width: 75px;     
+    z-index: 1;
+    margin: 10px 10px;      
+    background-color: rgb(174, 178, 184); 
+    overflow-x: hidden;    
+    padding-top: 10px;
+}
