@@ -1,44 +1,17 @@
 import React from 'react';
 import './App.css';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import { Navbar } from 'react-bootstrap';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Counter from './components/counter';
-import Sidebar from './components/Sidebar/sidebar';
+import NavBar from './components/Navbar';
+import About from "./components/About";
 
 let App = ()  => {
   return (
-    <>
-    
-    <Navbar expand="dark" className="bg-body-tertiary" variant="light">
-      <Container>
-        <Navbar.Brand href="#home" className="dark">Alan Rojas<br></br>Software Engineer</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">About Me</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
-        <Sidebar>
-        
-        </Sidebar>
-      </Container>
-    </Navbar>
-    <Counter/>
-    </>
+    <main>
+      <NavBar></NavBar>
+      <About></About>
+        <div>
+          <h3>My name is Alan Rojas and I am a software engineer interested in making network connections and learning as much about coding as I can. In my previous roles as an educator and corrections officer, I learned valuable methods to tackle unique problems and overcome adversity in a number of difficult situations. I devised how to create unique solutions to unique problems and was pushed to grow as a result of the various situations I faced. My ability to adapt and thrive in a number of different environments has allowed me to excel in a number of roles.</h3>
+        </div>
+    </main>
   );
 }
 
