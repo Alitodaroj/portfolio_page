@@ -2,12 +2,16 @@ import React from 'react';
 import './App.css';
 import NavBar from './components/Navbar';
 import About from "./components/About";
+import Skills from './components/Skills';
+import Contact from './components/Contact';
 
 let App = ()  => {
   return (
     <main>
       <NavBar></NavBar>
       <About></About>
+      <Skills></Skills>
+      <Contact></Contact>
     </main>
   );
 }
