@@ -3,7 +3,7 @@ import React from "react";
 export default function Skills() {
     return (
         <section id ="skills">
-            <div className="mt-1">
+            <div className="bs-border-color text-black mb-5 pb-6">
                 <h1>
                     Skills &amp; Technologies
                 </h1>

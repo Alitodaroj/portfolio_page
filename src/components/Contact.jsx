@@ -4,7 +4,7 @@ import { Button } from "react-bootstrap";
 
 export default function Contact() {
     return(
-        <section id="contact" classname="relative">
+        <section id="contact" classname="mt-4 mb-5">
              <Form>
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
         <Form.Label>Email address</Form.Label>

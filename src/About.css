@@ -1,0 +1,19 @@
+.profile img {
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    border: 8px solid #2c2f3f;
+}
+
+.rounded-circle {
+    border-radius: 50%
+}
+
+.img-fluid {
+    max-width: 100;
+    height: auto;
+}
+
+.success {
+    text-align: center;
+}

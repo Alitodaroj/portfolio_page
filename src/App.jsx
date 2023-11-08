@@ -1,11 +1,12 @@
-import React from 'react';
-import './App.css';
-import NavBar from './components/Navbar';
+import React from "react";
+import "./App.css";
+import NavBar from "./components/Navbar";
 import About from "./components/About";
-import Skills from './components/Skills';
-import Contact from './components/Contact';
+import Skills from "./components/Skills";
+import Contact from "./components/Contact";
+import "bootstrap/dist/css/bootstrap.css";
 
-let App = ()  => {
+let App = () => {
   return (
     <main>
       <NavBar></NavBar>
@@ -14,6 +15,6 @@ let App = ()  => {
       <Contact></Contact>
     </main>
   );
-}
+};
 
 export default App;
