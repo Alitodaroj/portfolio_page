@@ -1,20 +1,17 @@
 import React from "react";
+import { MyRoutes }  from "./components/Routes";
+import Home from "./components/pages/Home";
 import "./App.css";
-import NavBar from "./components/Navbar";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Contact from "./components/Contact";
-import "bootstrap/dist/css/bootstrap.css";
 
-let App = () => {
+const App = () => {
   return (
-    <main>
-      <NavBar></NavBar>
-      <About></About>
-      <Skills></Skills>
-      <Contact></Contact>
-    </main>
-  );
-};
+      <>
+      <div>
+      <Home />
+      <MyRoutes />
+      </div>
+      </>
+    );
+}
 
 export default App;
