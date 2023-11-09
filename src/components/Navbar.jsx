@@ -2,6 +2,8 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import { Navbar } from 'react-bootstrap';
+import { Link } from "react-router-dom";
+
 
 function NavBar() {
     const scrollToSection = (sectionId) => {
@@ -12,24 +14,22 @@ function NavBar() {
     }
 
     return (
-        <Navbar expand="dark" className="bg-body-tertiary fixed-top" variant="light">
-        <Container>
-        <Navbar.Brand href="#home" className="dark">
-            Alan Rojas<br></br>Software Engineer
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto">
-            <Nav.Link path="./pages/Home">Home</Nav.Link>
-            <Nav.Link href="about">About Me</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link path="./pages/Resume">Resume</Nav.Link>
-            <Nav.Link href="#link">Contact Me</Nav.Link>
-            <Nav.Link onClick={() => scrollToSection('skills')}>Skills</Nav.Link>
-        </Nav>
-        </Navbar.Collapse>
-        </Container>
-    </Navbar>
-    )
+            <Navbar expand="dark" className="bg-body-tertiary fixed-top" variant="light">
+            <Container>
+            <Navbar.Brand className="dark">
+                Alan Rojas<br></br>Software Engineer
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+                <Nav.Link onClick={() => scrollToSection('about')}>About Me</Nav.Link>
+                <Nav.Link onClick={() => scrollToSection('skills')}>Skills</Nav.Link>
+                <Nav.Link onClick={() => scrollToSection('contact')}>Contact Me</Nav.Link>
+                <Nav.Link as={Link} to="/">Home</Nav.Link>
+                <Nav.Link as={Link} to="/Resume">Resume</Nav.Link>
+            </Nav>
+            </Navbar.Collapse>
+            </Container>
+                </Navbar>    )
 }
 export default NavBar;
