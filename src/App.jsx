@@ -1,17 +1,15 @@
 import React from "react";
-import { BrowserRouter as Router }  from "react-router-dom";
-import Home from "./components/pages/Home";
+import { BrowserRouter } from "react-router-dom";
+import { MyRoutes }  from "./components/Routes";
 import Navbar from "./components/Navbar";
 import "./App.css";
 
 const App = () => {
   return (
-      <>
-      <Router>
-          <Navbar />
-          <Home />
-      </Router>
-      </>
+      <BrowserRouter>
+        <Navbar />
+        <MyRoutes />
+      </BrowserRouter>
     );
 }
 
