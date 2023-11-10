@@ -3,3 +3,8 @@ body {
     z-index: 1;      
     padding-top: 5em; 
 }
+
+.skills {
+   margin-top: 100px;
+   padding-top: 100px; 
+}

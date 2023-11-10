@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import { Navbar } from 'react-bootstrap';
-import { Link } from "react-router-dom";
 
 function NavBar() {
     const [expanded, setExpanded] = useState(false);
@@ -26,8 +25,6 @@ function NavBar() {
                 <Nav.Link onClick={() => scrollToSection('about')}>About Me</Nav.Link>
                 <Nav.Link onClick={() => scrollToSection('skills')}>Skills</Nav.Link>
                 <Nav.Link onClick={() => scrollToSection('contact')}>Contact Me</Nav.Link>
-                <Nav.Link as={Link} to="/">Home</Nav.Link>
-                <Nav.Link as={Link} to="/resume">Resume</Nav.Link>
             </Nav>
             </Navbar.Collapse>
             </Container>
