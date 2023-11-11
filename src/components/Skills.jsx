@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardBody, Row, Col } from "react-bootstrap"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "../App.css"
 
 function Skills() {
     return (
