@@ -18,6 +18,7 @@ function FormExample() {
   };
 
   return (
+    <section id='contact'>
     <Form noValidate validated={validated} onSubmit={handleSubmit}>
       <Row className="mb-3">
         <h3>Feel free to contact me if interested in any job opportunities or freelance work.</h3>
@@ -55,6 +56,7 @@ function FormExample() {
      
       <Button type="submit">Submit form</Button>
     </Form>
+    </section>
   );
 }
 
